@@ -27,7 +27,7 @@ class FirstFragment : Fragment() {
             requireActivity().finish()
         }
         binding.nextTV.setOnClickListener {
-            findNavController().navigate(R.id.secondFragment)
+            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment())
         }
 
         return binding.root
